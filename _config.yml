@@ -13,7 +13,7 @@ addthis:      TODO
 github:       https://github.com/spanishdict/engineering.spanishdict.com
 title:        SpanishDict Engineering
 subtitle:     Engineering at the world's largest Spanish learning website.
-keywords:     ['SpanishDict', 'spanish', 'engineering']
+keywords:     ['SpanishDict', 'spanish', 'engineering', 'web development']
 
 source:       .
 destination:  ./_site
