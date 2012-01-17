@@ -8,7 +8,7 @@ baseurl:      http://engineering.spanishdict.com/
 liveurl:      http://engineering.spanishdict.com
 analytics:    UA-329211-2
 disqus:       sdeng
-feedburner:   TODO
+feedburner:   spanishdicteng
 addthis:      topherdan1
 github:       https://github.com/spanishdict/engineering.spanishdict.com
 title:        SpanishDict Engineering
