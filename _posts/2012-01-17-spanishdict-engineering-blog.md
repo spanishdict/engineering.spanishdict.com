@@ -5,8 +5,8 @@ author_link: https://github.com/ryan-roemer
 author_email: ryan@spanishdict.com
 title: Our New Engineering Blog!
 description: We've launched a new engineering blog for all things technical at
-  SpanishDict.com, hosted on the amazing GitHub Pages service using the Jekyll
-  site generator.
+  SpanishDict.com. Our site is developed using the Jekyll static site
+  generator, and hosted on GitHub's awesome Pages service.
 date: 2012-01-17 14:00:00 UTC
 tags: ['spanishdict', 'engineering', 'blog', 'github', 'jekyll']
 ---
@@ -84,9 +84,9 @@ with some shortcuts for blog posts, etc. if you use the conventional support
 
 ## ... and Back to Work.
 
-We iterate and release often at SpanishDict, as a general principle. And
-that also applies to our blog. Now that we're live, we'll be tinkering and' playing with the look and feel until it truly feels like our new "home".
-Let us know what you think!
+We iterate and release often at SpanishDict. And that also applies to our blog.
+Now that we're live, we'll be tinkering and' playing with the look and feel
+until it truly feels like our new "home". Let us know what you think!
 
 As a final note, we are looking for developers to round out our engineering
 team. We're a fun and growing group, located in the DC metro area / Northern
