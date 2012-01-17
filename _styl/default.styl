@@ -123,6 +123,27 @@ a.button
 // See: - http://webdesignerwall.com/tutorials/css3-gradient-buttons
 //      - http://www.webdesignerwall.com/demo/css-buttons.html
 div.menu a.button,
+a.blue
+  button-text-color = #E9E9E9
+  color: button-text-color
+  border: solid 1px #656d74
+  background: #275783
+  background linear-gradient(top, #1f7bd0, #275783)
+
+  .ie6 &, .ie7 &, .ie8 &
+    border: 1px solid #aaaaaa
+
+  &:visited, &:hover
+    color: button-text-color
+
+  &:hover
+    background: #2d6fac
+    background linear-gradient(top, #3285d2, #2d6fac)
+
+  &:active
+    background: #2d6fac
+    background linear-gradient(top, #3285d2, #2d6fac)
+
 a.grey
   button-text-color = #E9E9E9
   color: button-text-color
