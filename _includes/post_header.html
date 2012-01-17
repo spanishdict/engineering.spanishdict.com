@@ -1,6 +1,9 @@
 <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 <div id="post-meta" class="clearfix">
-  <div id="date">{{ post.date | date:"%A, %B %d, %Y" }}</div>
+  <div id="date">
+    {{ post.date | date:"%A, %B %d, %Y" }}<br />
+    by <a href="mailto:{{ post.email }}">{{ post.author }}</a>
+  </div>
   <div id="tags">
     <span class="section">tags</span>:
     {% assign goog = "http://www.google.com/search?q=" %}

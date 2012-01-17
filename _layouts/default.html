@@ -9,6 +9,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+  {% capture site_img %}{{ site.baseurl }}media/img/site/{% endcapture %}
   {% capture icon_dir %}{{ site.baseurl }}media/img/socialis2/nobg/color/{% endcapture %}
   {% capture icon_dims %}width="52" height="52"{% endcapture %}
 
@@ -53,8 +54,12 @@
     <header>
       <!-- Title -->
       <div class="title clearfix">
-        <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+        <h1><a href="{{ site.baseurl }}"><img
+            src="{{ site_img }}sd_eng_logo.png" alt="{{ site.title }}" /></a></h1>
+{% comment %}
+        TODO: Figure out if we're using a subtitle.
         <p>{{ site.subtitle }}</p>
+{% endcomment %}
       </div>
       <!-- Menu -->
       <div class="menu clearfix">
