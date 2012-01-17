@@ -6,10 +6,10 @@ server:       false
 
 baseurl:      http://engineering.spanishdict.com/
 liveurl:      http://engineering.spanishdict.com
-analytics:    TODO
-disqus:       TODO
+analytics:    UA-329211-2
+disqus:       sdeng
 feedburner:   TODO
-addthis:      TODO
+addthis:      topherdan1
 github:       https://github.com/spanishdict/engineering.spanishdict.com
 title:        SpanishDict Engineering
 subtitle:     Engineering at the world's largest Spanish learning website.
