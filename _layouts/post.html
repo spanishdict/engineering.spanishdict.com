@@ -36,16 +36,6 @@ layout: default
   </script>
 
 {% comment %}
-  <!-- Facebook -->
-  <div id="fb-root"></div>
-  <div class="fb-like" data-href="{{ site.liveurl }}{{ page.url }}"
-      data-send="true" data-layout="button_count" data-width="100"
-      data-show-faces="true"></div>
-  <script type="text/javascript">
-    Modernizr.load({ load: '//connect.facebook.net/en_US/all.js' +
-                           '#appId=137956002967904&xfbml=1' });
-  </script>
-
   <!-- AddThis -->
   <div class="addthis_toolbox addthis_default_style">
     <a class="addthis_button_tweet"></a>
@@ -57,7 +47,7 @@ layout: default
   </div>
   <script type="text/javascript">
     var addthis_config = {
-       pubid: "ra-4e6f7b3d32fd08b1",
+       pubid: "TODO",
        title: "{{ page.title }}",
        description: "{{ page.description }}"
     };
@@ -83,10 +73,16 @@ layout: default
     {% endif %}
 
     /* Load embedded disqus. */
-    Modernizr.load({ load: 'http://' + disqus_shortname +
-                           '.disqus.com/embed.js' });
+    Modernizr.load({
+      load: 'http://' + disqus_shortname + '.disqus.com/embed.js'
+    });
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">Blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by
+  Disqus.</a>
+</noscript>
+<a href="http://disqus.com" class="dsq-brlink">Blog comments powered by
+<span class="logo-disqus">Disqus</span></a>
 
 </div>
