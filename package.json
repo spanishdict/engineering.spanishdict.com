@@ -1,0 +1,9 @@
+{
+  "name": "engineering.spanishdict.com",
+  "description": "Development dependencies for engineering blog.",
+  "version": "0.0.1",
+  "devDependencies": {
+    "nib": ">=0.2.0",
+    "stylus": ">=0.16.0 "
+  }
+}
