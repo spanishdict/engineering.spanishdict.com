@@ -1,8 +1,16 @@
+{% assign author_link = nil %}
+{% if post.author_link %}
+  {% assign author_link = post.author_link %}
+{% else %}{% if post.author_email %}
+  {% capture author_link %}mailto:{{ post.author_email }}{% endcapture %}
+{% endif %}{% endif %}
+
 <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 <div id="post-meta" class="clearfix">
   <div id="date">
     {{ post.date | date:"%A, %B %d, %Y" }}<br />
-    by <a href="mailto:{{ post.email }}">{{ post.author }}</a>
+    by {% if author_link %}<a href="{{ author_link }}"
+        >{% endif %}{{ post.author }}{% if author_link %}</a>{% endif %}
   </div>
   <div id="tags">
     <span class="section">tags</span>:
