@@ -13,8 +13,8 @@
 // Page
 text-color = #222222
 page-width = 600px
-page-background = #cccccc
-link-color = #3c7dc1
+page-background = #F4F4F4
+link-color = #2C6EAC
 select-background = #999999
 select-color = #ffffff
 
@@ -25,9 +25,10 @@ header-subtitle-color = #cccccc
 menu-background = #ffffff
 menu-color = #ffffff
 post-title-color = #222222
-heading-color = #555555
+heading-color = #333333 
 text-line-height = 125%
 content-background = #ffffff
+content-border = #cccccc
 content-padding = 30px
 content-width = page-width + (2 * content-padding)
 code-background = #222222
@@ -40,7 +41,6 @@ code-border = #cccccc
 body
   color: text-color
   background-color: page-background
-  font-size: 14px
 
 a
   &, &:active, &:visited, &:hover
@@ -83,315 +83,93 @@ pre,
 .highlight span
   background-color: code-background !important
 
+h3
+  font-size:15px
+  line-height:34px
+
 /**
- * Templates
+ * Header
  */
-// Button Base
-a.button
-  display: inline-block
-  outline: none
-  cursor: pointer
-  text-align: center
-  text-decoration: none
-  font-size: 18px
-  text-shadow: 0 1px 1px rgba(0,0,0,.3)
-  border-radius(0.5em)
-  box-shadow(0, 1px, 2px, rgba(0,0,0,.2))
-  padding: .25em 1.5em .25em 1.5em
-  margin: 0px 2px
-  height: 24px
-
-  &:active
-    position: relative
-    top: 1px
-
-.text a.button
-  line-height: 28px
-
-// Icons
-.icon a
-  height: 24px
-  width: 24px
-  padding: .25em .75em .25em .75em
-  display: inline-block
-
-  img
-    //margin: -8px  // Glyph
-    margin: -13px  // Color
-
-// Button Colors
-// See: - http://webdesignerwall.com/tutorials/css3-gradient-buttons
-//      - http://www.webdesignerwall.com/demo/css-buttons.html
-div.menu a.button,
-a.blue
-  button-text-color = #E9E9E9
-  color: button-text-color
-  border: solid 1px #656d74
-  background: #275783
-  background linear-gradient(top, #1f7bd0, #275783)
-
-  .ie6 &, .ie7 &, .ie8 &
-    border: 1px solid #aaaaaa
-
-  &:visited, &:hover
-    color: button-text-color
-
-  &:hover
-    background: #2d6fac
-    background linear-gradient(top, #3285d2, #2d6fac)
-
-  &:active
-    background: #2d6fac
-    background linear-gradient(top, #3285d2, #2d6fac)
-
-a.grey
-  button-text-color = #E9E9E9
-  color: button-text-color
-  border: solid 1px #555555
-  background: #6e6e6e
-  background linear-gradient(top, #888888, #575757)
-
-  .ie6 &, .ie7 &, .ie8 &
-    border: 1px solid #aaaaaa
-
-  &:visited, &:hover
-    color: button-text-color
-
-  &:hover
-    background: #616161
-    background linear-gradient(top, #757575,  #4b4b4b)
-
-  &:active
-    color: #afafaf
-    background linear-gradient(top, #575757,  #888888)
-
-a.white
-  button-text-color = #303030
-  color: button-text-color
-  border: solid 1px #b7b7b7
-  background: #ffffff
-  background linear-gradient(top, #ffffff, #ededed)
-
-  .ie6 &, .ie7 &, .ie8 &
-    border: 1px solid button-text-color
-
-  &:visited, &:hover
-    color: button-text-color
-
-  &:hover
-    background: #ededed
-    background linear-gradient(top, #ffffff,  #dcdcdc)
-
-  &:active
-    color: #999999
-    background linear-gradient(top, #ededed,  #ffffff)
-
-// Fix -moz-box-shadow horizontal scroll bug.
-// http://stackoverflow.com/questions/2359578/
-// css-box-shadow-on-container-div-causes-scrollbars
-header-offset = 5px
-#header-wrapper
-  overflow: hidden
-  padding: header-offset 0px
-  margin: -(header-offset) 0px
-
 header
-  width: 100%
-  margin-left: auto
-  margin-right: auto
-  margin-bottom: 20px
-  padding-top: 1em
-  background-color: header-background
-  color: header-color
-  box-shadow(0px, header-offset, header-offset, #999999)
+  padding: 20px 0 5px
 
-  div.title,
-  div.menu
-    margin-left: auto
-    margin-right: auto
-    a, a:active, a:visited, a:hover
-      text-decoration: none
 
-  div.menu
-    width: page-width
-    padding-bottom: 6px
-    text-align: center
-    background: menu-background
-    color: menu-color
-    a, a:active, a:visited, a:hover
-      color: menu-color
+/**
+ * Main Content
+ */
 
-    .inner
-      display: inline-block
-      text-align: center
+#main-content
+  padding:20px;
+  border: 1px solid content-border
+  border-radius(3px)
+  background: content-background
+  box-shadow(0, 3px, 4px, content-border)
 
-    ul
-      margin: 0
-      margin-bottom: 10px
-      padding: 0
-      li
-        float: left
-        display: inline
+  .more-posts 
+    margin: 15px 0px 5px 0px
+    a
+      width:94%
 
-  div.title
-    width: page-width
-    margin-bottom: 10px
-    padding: 0.5em
-    a, a:active, a:visited, a:hover
-      color: header-color
-
-    h1,
-    p
-      margin: 0
-
-    h1
-      text-align: center
-      // font-size: 3.2em
-      // font-weight: 800
-      // padding-right: 0.5em
-      // margin-right: 0.5em
-
-    p
-      font-size: 1.15em
-      font-weight: 350
-      color: header-subtitle-color
-
-#main
-  width: content-width
-  margin-left: auto
-  margin-right: auto
-
-  .inner
-    margin-top: 5px
-    margin-bottom: 30px
-    padding: 20px content-padding
-    border-radius(10px)
-    background: content-background
-    box-shadow(2px, 5px, 5px, #999999)
-
-    .ie6 &, .ie7 &, .ie8 &
-      border: 2px solid #999999
-
-#main,
-#post,
-div.page
-  h2,
-  h3,
-  h4
-    color: heading-color
-    text-shadow: 1px 1px 2px rgba(0,0,0,.2)
-
-  h2.title
-    margin-top: 0px
-    font-size: 2.0em
-    text-align: center
-    color: post-title-color
-
-    a, a:active, a:visited, a:hover
-      color: post-title-color
-      text-decoration: none
-
-#post-meta
-  display: block
-
-#date
-  float: left
-
-#tags
-  float: right
-  width: 250px
-  text-align: right
-
-#date,
-#tags span.section
-  font-style: italic
-
+/**
+ * Post styles
+ */
 .post
-  width: page-width
-  margin-bottom: 15px
+  margin-top:-20px
+  margin-bottom:20px
+  padding:0 0 20px 0
+  border-bottom:1px solid content-border
 
-  .more
-    text-align: right
-    font-style: italic
-    margin-bottom: 15px
+.post-title h2
+  padding: 0px 0px 10px 0px
 
-  p
-    text-indent: 25px
-    line-height: text-line-height
+.post-date
+  text-shadow: 0 1px 0 #ffffff
+  position:relative
+  left:-100px
+  top:27px
+  color:#666666
+  font-size:20px
+  font-weight:bold
 
-  ul
-    li
-      line-height: text-line-height
-      padding-bottom: 5px
-      p
-        text-indent: 0px
-        margin: 0
-        padding: 0
-
-#share
-  height: 20px
-  margin-bottom: 8px
-  width: page-width
-  float: left
-  display:inline
-
-  // Manually hack the inline width of G+1 button.
-  div#___plusone_0
-    padding-left: 10px !important
-    &[style]
-      width: 200px !important
+.post-meta
+  font-size:11px;
 
 /**
- * Pages
+ * Sidebar
  */
-div.page
-  h2.title
-    text-align: left
 
-  p
-    line-height: text-line-height
+#sidebar
+  .block
+    margin:25px 0px
 
-div.about
-  img.about
-    border: none
-    float: right
-    position: relative
-    margin: 0px 5px 10px 15px
-    box-shadow(3px, 3px, 4px, #999999)
+    h5
+      border-bottom: 1px solid content-border
+      box-shadow(0, 1px, 1px, #FFFFFF)
+      text-shadow: 0 1px 0 #ffffff
+      margin:0 0 10px 0
+    
+    .social-links
+      list-style:none
 
-    .ie6 &, .ie7 &, .ie8 &
-      border: 2px solid #999999
+      li
+        padding:2px 0px
 
-  p
-    text-indent: 25px
+      a
+        padding:0 0 0 26px
+        line-height:20px
 
-div.archived-post
-  first-col-width = 100px
-  margin-bottom: 10px
+      .rss
+        background:url(../img/site/feed-16x16.png) no-repeat 0 0;
+      .twitter
+        background:url(../img/site/twitter-16x16.png) no-repeat 0 0;
+      .github
+        background:url(../img/site/github-16x16.png) no-repeat 0 0;
 
-  time,
-  div.item
-    display: inline
-    float: left
-    margin: 0
-    padding: 0
-    border: 0
-    font-size: 1.1em
-
-  time
-    width: first-col-width - 2
-    font-weight: bold
-
-  div.item
-    width: page-width - first-col-width - 2
-    p
-      margin: 5px 0px
 
 /**
- * Print
+ * Footer
  */
-// Override boilerplate.
-@media print
-  a[href]:after,
-  abbr[title]:after
-    content: "" !important
+footer
+  padding:20px 0px 30px 0px
+  text-align:center
+

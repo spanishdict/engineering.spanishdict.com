@@ -11,8 +11,6 @@ date: 2012-01-17 14:00:00 UTC
 tags: ['spanishdict', 'engineering', 'blog', 'github', 'jekyll']
 ---
 
-## Engineering at the World Leader in Spanish Learning
-
 At [SpanishDict][sd], our engineering team works daily with a number of cool
 search, natural language, database, cloud and web technologies. We thought it
 was about time to let the world peer in a bit at how we work and what we do
@@ -22,7 +20,7 @@ learning tools.
 The first step in this direction is to offer a blog, and as a fitting first
 post, we'll discuss what technologies we chose and why.
 
-## Blogging Options Everywhere
+### Blogging Options Everywhere
 
 There are an enormous amount of great blogging resources out there for
 technically-focused blogs like ours, ranging from lightweight
@@ -42,7 +40,7 @@ use cases for our blog to the following:
 * **Syntax Highlighting**: We're developers, we speak code, we need to show
   all of our awesome programs in a highlighted, usable manner.
 
-## Jekyll and GitHub Pages = Geek Heaven
+### Jekyll and GitHub Pages = Geek Heaven
 
 After a good amount of research and experimentation with a number of blog
 platforms, we arrived at a solution that squarely hit all of our use cases:
@@ -82,7 +80,7 @@ with some shortcuts for blog posts, etc. if you use the conventional support
   whenever they want, without having to route everything through a blog
   platform online administrative interface.
 
-## ... and Back to Work.
+### ... and Back to Work.
 
 We iterate and release often at SpanishDict. And that also applies to our blog.
 Now that we're live, we'll be tinkering and' playing with the look and feel

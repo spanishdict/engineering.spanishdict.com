@@ -4,18 +4,19 @@ layout: default
 {% assign post = page %}
 
 <!-- Post -->
-<div class="inner">
-<div id="post" class="post">
+<div class="post">
   <article>
     {% include post_header.html %}
     {{ content }}
+    {% include post_meta.html %}
   </article>
 </div>
-</div>
+
+<br />
+<br />
 
 <!-- Sharing -->
-<div class="inner">
-<div id="share" class="clearfix">
+<div class="sharing clearfix">
   <!-- AddThis -->
   <div class="addthis_toolbox addthis_default_style">
     <a class="addthis_button_tweet"></a>
@@ -41,27 +42,27 @@ layout: default
 </div>
 
 <!-- Disqus -->
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* Configure. */
-    var disqus_shortname = '{{ site.disqus }}';
-    var disqus_url = '{{ site.liveurl }}{{ page.url }}';
-    {% if site.baseurl == '/' %}
-        // Developer mode for local host.
-        var disqus_developer = 1;
-    {% endif %}
+<div class="comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* Configure. */
+      var disqus_shortname = '{{ site.disqus }}';
+      var disqus_url = '{{ site.liveurl }}{{ page.url }}';
+      {% if site.baseurl == '/' %}
+          // Developer mode for local host.
+          var disqus_developer = 1;
+      {% endif %}
 
-    /* Load embedded disqus. */
-    Modernizr.load({
-      load: 'http://' + disqus_shortname + '.disqus.com/embed.js'
-    });
-</script>
-<noscript>
-  Please enable JavaScript to view the
-  <a href="http://disqus.com/?ref_noscript">comments powered by
-  Disqus.</a>
-</noscript>
-<a href="http://disqus.com" class="dsq-brlink">Blog comments powered by
-<span class="logo-disqus">Disqus</span></a>
-
+      /* Load embedded disqus. */
+      Modernizr.load({
+        load: 'http://' + disqus_shortname + '.disqus.com/embed.js'
+      });
+  </script>
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a>
+  </noscript>
+  <a href="http://disqus.com" class="dsq-brlink">Blog comments powered by
+  <span class="logo-disqus">Disqus</span></a>
 </div>
