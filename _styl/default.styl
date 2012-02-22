@@ -30,7 +30,7 @@ text-line-height = 125%
 content-background = #ffffff
 content-border = #cccccc
 content-padding = 30px
-content-width = page-width + (2 * content-padding)
+content-width = 500px
 
 // Dark-themed
 // code-background = #222222
@@ -98,6 +98,10 @@ h3
   font-size:15px
   line-height:34px
 
+.clearfix
+  zoom: 1
+  clear: both
+
 /**
  * Header
  */
@@ -125,8 +129,8 @@ header
  * Post styles
  */
 .post
-  margin-top:-20px
-  margin-bottom:20px
+  margin-top: -20px
+  margin-bottom: 20px
   padding:0 0 20px 0
   border-bottom:1px solid content-border
 
@@ -142,8 +146,18 @@ header
   font-size:20px
   font-weight:bold
 
-.post-meta
-  font-size:11px;
+#post-meta
+  font-size: 11px
+  display: inline-block
+  width: content-width
+
+#author
+  float: left
+
+#tags
+  float: right
+  width: 200px
+  text-align: right
 
 /**
  * Sidebar

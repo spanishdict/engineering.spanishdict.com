@@ -10,6 +10,7 @@ pre,.gist .gist-file{border:1px solid #ccc;-webkit-border-radius:3px;-moz-border
 .ie6 pre,.ie6 .gist .gist-file,.ie7 pre,.ie7 .gist .gist-file,.ie8 pre,.ie8 .gist .gist-file{border:2px solid #999}
 .highlight span{background-color:#fdfdfd !important}
 h3{font-size:15px;line-height:34px}
+.clearfix{zoom:1;clear:both}
 header{padding:20px 0 5px}
 #main-content{padding:20px;border:1px solid #ccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#fff;-webkit-box-shadow:0 3px 4px #ccc;-moz-box-shadow:0 3px 4px #ccc;box-shadow:0 3px 4px #ccc;}
 #main-content .more-posts{margin:15px 0 5px 0;}
@@ -17,7 +18,9 @@ header{padding:20px 0 5px}
 .post{margin-top:-20px;margin-bottom:20px;padding:0 0 20px 0;border-bottom:1px solid #ccc}
 .post-title h2{padding:0 0 10px 0}
 .post-date{text-shadow:0 1px 0 #fff;position:relative;left:-100px;top:27px;color:#666;font-size:20px;font-weight:bold}
-.post-meta{font-size:11px}
+#post-meta{font-size:11px;display:inline-block;width:500px}
+#author{float:left}
+#tags{float:right;width:200px;text-align:right}
 #sidebar .block{margin:25px 0;}
 #sidebar .block h5{border-bottom:1px solid #ccc;-webkit-box-shadow:0 1px 1px #fff;-moz-box-shadow:0 1px 1px #fff;box-shadow:0 1px 1px #fff;text-shadow:0 1px 0 #fff;margin:0 0 10px 0}
 #sidebar .block .social-links{list-style:none;}
