@@ -30,7 +30,7 @@ might not render well in older browsers and IE.
 
 [Async.js][asyncjs] is a control flow library for the browser and
 [Node.js][nodejs]. It is a wonderful tool for taming parallel, serial and
-dependency graph-like combinations of asynchonous callbacks. Put another way,
+dependency graph-like combinations of asynchronous callbacks. Put another way,
 if this nested-callback pattern looks familiar:
 
 {% highlight javascript %}
@@ -58,7 +58,7 @@ then Async.js might just be your solution.
 My talk covers some of Async.js' most fundamental abstractions:
 
 * Series
-* Waterfalls
+* Waterfall
 * Parallel
 * Collections
 
@@ -76,6 +76,4 @@ library.
 [impress]: http://bartaz.github.com/impress.js
 [prezi]: http://prezi.com/
 
-
 <!-- more end -->
-
