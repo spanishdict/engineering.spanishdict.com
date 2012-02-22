@@ -25,14 +25,21 @@ header-subtitle-color = #cccccc
 menu-background = #ffffff
 menu-color = #ffffff
 post-title-color = #222222
-heading-color = #333333 
+heading-color = #333333
 text-line-height = 125%
 content-background = #ffffff
 content-border = #cccccc
 content-padding = 30px
-content-width = page-width + (2 * content-padding)
-code-background = #222222
-code-color = #ffffff
+content-width = 500px
+
+// Dark-themed
+// code-background = #222222
+// code-color = #ffffff
+// code-border = #cccccc
+
+// Light-themed
+code-background = #fdfdfd
+code-color = #333333
 code-border = #cccccc
 
 /**
@@ -55,6 +62,10 @@ a
 ::selection
   background: select-background
   color: select-color
+
+code
+  color: code-color
+  border: none
 
 p code
   background-color: content-background
@@ -87,6 +98,10 @@ h3
   font-size:15px
   line-height:34px
 
+.clearfix
+  zoom: 1
+  clear: both
+
 /**
  * Header
  */
@@ -105,7 +120,7 @@ header
   background: content-background
   box-shadow(0, 3px, 4px, content-border)
 
-  .more-posts 
+  .more-posts
     margin: 15px 0px 5px 0px
     a
       width:94%
@@ -114,8 +129,8 @@ header
  * Post styles
  */
 .post
-  margin-top:-20px
-  margin-bottom:20px
+  margin-top: -20px
+  margin-bottom: 20px
   padding:0 0 20px 0
   border-bottom:1px solid content-border
 
@@ -131,8 +146,18 @@ header
   font-size:20px
   font-weight:bold
 
-.post-meta
-  font-size:11px;
+#post-meta
+  font-size: 11px
+  display: inline-block
+  width: content-width
+
+#author
+  float: left
+
+#tags
+  float: right
+  width: 200px
+  text-align: right
 
 /**
  * Sidebar
@@ -147,7 +172,7 @@ header
       box-shadow(0, 1px, 1px, #FFFFFF)
       text-shadow: 0 1px 0 #ffffff
       margin:0 0 10px 0
-    
+
     .social-links
       list-style:none
 

@@ -5,12 +5,12 @@
   {% capture author_link %}mailto:{{ post.author_email }}{% endcapture %}
 {% endif %}{% endif %}
 
-<div class="post-meta">
-  <span class="author">
+<div id="post-meta" class="clearfix">
+  <span id="author">
   By {% if author_link %}<a href="{{ author_link }}"
-        >{% endif %}{{ post.author }}{% if author_link %}</a>{% endif %};
+        >{% endif %}{{ post.author }}{% if author_link %}</a>{% endif %}
   </span>
-  <span class="tags">Tagged 
+  <span id="tags">Tags:
   {% assign goog = "http://www.google.com/search?q=" %}
   {% for tag in post.tags %}
     <a href='{{ goog }}{{ tag | escape }}+site:{{ site.liveurl }}'
