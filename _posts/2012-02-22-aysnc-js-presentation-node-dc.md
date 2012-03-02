@@ -14,7 +14,7 @@ tags: ['javascript', 'control flow', 'node.js', 'async.js', 'parallel']
 ---
 {% capture img_dir %}{{ site.baseurl }}media/img/{{page.date|date: "%Y/%m/%d"}}{% endcapture %}
 
-## DC Node/jQuery Presentation
+### DC Node/jQuery Presentation
 
 I gave the following presentation on Async.js to a combined [Node.DC][node_dc]
 and [DC jQuery][dcjq] meetup on Feb. 20, 2012.
@@ -26,7 +26,7 @@ The full [presentation][pres] is available on GitHub, and uses the
 [Impress.js][impress] CSS3-based presentation framework. Consequently, it
 might not render well in older browsers and IE.
 
-## Better JavaScript Control Flow with Async.js
+### Better JavaScript Control Flow with Async.js
 
 [Async.js][asyncjs] is a control flow library for the browser and
 [Node.js][nodejs]. It is a wonderful tool for taming parallel, serial and
