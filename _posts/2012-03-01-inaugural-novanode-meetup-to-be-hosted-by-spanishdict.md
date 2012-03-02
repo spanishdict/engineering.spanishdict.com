@@ -12,7 +12,7 @@ tags: ['node.js', 'NovaNode', 'node', 'meetup']
 
 {% capture img_dir %}{{ site.baseurl }}media/img/{{page.date|date: "%Y/%m/%d"}}{% endcapture %}
 
-![Nova Node Logo][nova_node_img]
+[![Nova Node Logo][nova_node_img]][meetup]
 
 [nova_node_img]: {{ img_dir }}/nova_node.png
 
