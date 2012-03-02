@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Chris Cummings
-author_email: chris@spanishdict.com
+author_link: http://www.spanishdict.com/company/people
 title: Inaugural NovaNode Meetup to be Hosted at SpanishDict.com
 description: SpanishDict is delighted to be hosting the first meetup of the 
   new NovaNode meetup group. Two outstanding Node.js talks are lined up for the 
