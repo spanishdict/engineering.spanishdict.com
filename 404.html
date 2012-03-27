@@ -22,8 +22,8 @@
 	<meta name="keywords" content="SpanishDict, spanish, engineering, web development" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="http://engineering.spanishdict.com/media/css/boilerplate.min.css"  />
-  <link rel="stylesheet" type="text/css" href="http://engineering.spanishdict.com/media/css/syntax/fruity.css"  />
+  <link rel="stylesheet" type="text/css" href="http://engineering.spanishdict.com/media/css/syntax/monokai.css"  />
+  <link rel="stylesheet" type="text/css" href="http://engineering.spanishdict.com/media/css/bootstrap.css"  />
   <link rel="stylesheet" type="text/css" href="http://engineering.spanishdict.com/media/css/default.css"  />
 
   <link rel="alternate" type="application/atom+xml"
@@ -45,54 +45,34 @@
   <script src="http://engineering.spanishdict.com/media/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
-  <!-- Content -->
-  <div id="container" class="container clearfix">
-    <!-- Header -->
-    <div id="header-wrapper">
+  <!--Main containter-->
+  <div class="container">
+    <!--Header-->
     <header>
-      <!-- Title -->
-      <div class="title clearfix">
-        <h1><a href="http://engineering.spanishdict.com/"><img
-            src="http://engineering.spanishdict.com/media/img/site/sd_eng_logo.png" alt="SpanishDict Engineering" /></a></h1>
-
-      </div>
-      <!-- Menu -->
-      <div class="menu clearfix">
-        <div class="inner">
-          <ul>
-            <li class="text"><a class="button"
-                   href="http://engineering.spanishdict.com/">Home</a></li>
-            <li class="text"><a class="button"
-                   href="http://engineering.spanishdict.com/archive.html">Archive</a></li>
-
-            <li class="icon">
-                <a class="button" href="https://twitter.com/#!/spanishdict">
-                  <img src="http://engineering.spanishdict.com/media/img/socialis2/nobg/color/Twitter.png" width="52" height="52" />
-                </a>
-            <li class="icon">
-                <a class="button" href="https://github.com/spanishdict">
-                  <img src="http://engineering.spanishdict.com/media/img/socialis2/nobg/color/GH.png" width="52" height="52"  />
-                </a>
-            </li>
-            <li class="icon">
-                <a class="button"
-                  href="http://feeds.feedburner.com/spanishdicteng">
-                  <img src="http://engineering.spanishdict.com/media/img/socialis2/nobg/color/RSS.png" width="52" height="52" />
-                </a>
-            </li>
-          </ul>
+      <div class="row">
+        <div class="span7 offset2">
+        <h1>
+          <a href="http://engineering.spanishdict.com/">
+            <img src="http://engineering.spanishdict.com/media/img/site/sd_eng_logo.png" alt="SpanishDict Engineering" />
+          </a>
+        </h1>
+        </div>
+        <div class="span3">
         </div>
       </div>
     </header>
-    </div>
 
-    <div id="main" role="main">
-      <div class="inner">
-  <div class="page not-found">
-    
-      <h2 class="title">Not Found</h2>
-    
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <!--Main-->
+
+      <div class="row">
+        <!--Content-->
+        <div class="span7 offset2">
+          <div id="main-content">
+            <div class="page not-found">
+	
+	  <h2 class="title">Not Found</h2>
+	
+	<p>Sorry, but the page you were trying to view does not exist.</p>
 
 <p>It looks like this was the result of either:</p>
 
@@ -105,14 +85,52 @@
   var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),
       GOOG_FIXURL_SITE = location.host;
 </script><script src='http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js' />
-  </div>
 </div>
 
-    </div>
 
-    <!-- Footer -->
+            <div class="more-posts">
+              <a class="btn" href="http://engineering.spanishdict.com/archive.html">All Posts</a>
+            </div>
+          </div>
+        </div>
+        <!--Sidebar-->
+        <div class="span3" id="sidebar">
+          <div class="block">
+            <h5>About</h5>
+            <p>Innovations, reviews, analysis, and insights from the SpanishDict engineering team</p>
+          </div>
+          <div class="block">
+            <h5>Interested?</h5>
+            <p>
+              If you are interested in helping us solve hard engineering challenges while ushering in a new era of high-quality online language learning, get in touch. We're hiring!
+              <br />
+              <br />
+              <a class="btn primary" href="http://www.spanishdict.com/careers">View Jobs</a>
+            </p>
+          </div>
+          <div class="block">
+            <h5>Stay in touch</h5>
+            <ul class="social-links unstyled">
+              <li><a class="rss" href="http://feeds.feedburner.com/spanishdicteng">RSS</a></li>
+              <li><a class="twitter" href="https://twitter.com/#!/spanishdict">Twitter</a></li>
+              <li><a class="github" href="https://github.com/spanishdict">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    <!--Footer-->
     <footer>
+      <div class="row">
+        <div class="span7 offset2">
+        Copyright 2012 Curiosity Media, Inc.
+        </div>
+        <div class="span3">
+        </div>
+      </div>
     </footer>
+
   </div>
 
   <!-- JavaScript -->
