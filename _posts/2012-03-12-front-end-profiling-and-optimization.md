@@ -47,24 +47,24 @@ event. We also patched older versions of IE with a
 [console.time function][console]. Here is roughly how the code looked:
 
 {% highlight html %}
-	<html>
-		<head>
-			<script type="text/javascript">
-				//Start the timer
-				console.time('DOMContentLoaded');
-			</script>
-		</head>
-		<body>
-			<!--All the page content goes here-->
-			<script type="text/javascript">
-				function afterDOMContentLoadedEvent() {
-				  //Stop the time after the DOMContentLoaded event
-			      console.timeEnd('DOMContentLoaded');  
-			    }
-		    </script>
-		</body>
-	</html>
-{% highlight html %}
+<html>
+  <head>
+    <script type="text/javascript">
+      //Start the main timer
+      console.time('DOMContentLoaded');
+    </script>
+  </head>
+  <body>
+    <p>PAGE CONTENT GOES HERE</p>
+    <script type="text/javascript">
+      function afterDOMContentLoadedEvent() {
+        //Stop the time after the DOMContentLoaded event
+        console.timeEnd('DOMContentLoaded');  
+      }
+    </script>
+  </body>
+</html>
+{% endhighlight %}
 
 ### Establishing the Baseline
 
@@ -81,7 +81,9 @@ the site. Here is what we found:
 	IE8:	  462ms
 
 Wow. That is a lot of time rendering--almost 10 times as much time as it 
-takes for the server to generate the page.
+takes for the server to generate the page. This finding resonates with the
+[Performance Golden Rule][souders] from Steve Souders, which is that 80-90% of
+the end-user response time is spent on the front end.
 
 ### Back to Basics 
 
@@ -117,10 +119,12 @@ Now let's include the JS, but exclude the CSS:
 	IE9: 	  331ms (206ms gap)
 	IE8:	  180ms (50ms gap)
 
-So we have opportunities to improve the CSS in Internet Explorer and the 
-Javascript throughout the site. 
+We can see that we have a lot of opportunity to improve both the JS and the 
+CSS on the site. Now let's dive into the improvements. 
 
-### A Big JS Improvement in a Flash
+<!-- more start -->
+
+### A Big JS Improvement...in a Flash
 
 We used [DynaTrace Ajax 3][dynatrace] to identify the bottlenecks in Internet 
 Explorer.  We found that a major culprit was [SoundManager2][soundmanager], a 
@@ -135,7 +139,7 @@ code so that SoundManager only loads after a user clicks on the audio icon.
 Removing SoundManager resulted in a nearly 100ms improvement in IE. That was
 one of our larger changes.
 
-### CSS - It's element<s>ary my dear Watson
+### CSS - It's element{s}ary my dear Watson
 
 We also had to tackle the CSS delays. Using DynaTrace, we noticed that IE was
 spending an inordinate amount of time [rendering the page][ierendering]. To 
@@ -157,15 +161,23 @@ could speed up the initial response by over 100ms. As a result, we decided to
 pre-load fewer elements on the page, allowing certain sections to only load
 after a user made an ajax call to retrieve the elements. 
 
+Another CSS optimization that we did was run [Google Pagespeed][pagespeed] and
+identify the slow CSS rules in our code. Google Pagespeed is able to identify
+any rules that browsers struggle to execute. In our case, because we had so 
+many elements on the page, the impact of each slow rule was magnified
+significantly. 
+
 ### You Get What you Measure
 
-This exercise made apparent that for our site, front-end performance is a
+This project made apparent that for our site, front-end performance is a
 key metric that we must measure, monitor, and manage. Performance optimization
 is an ongoing effort. We embedded within our code an easy way to measure 
 across browsers the frontend load time of any page on our site. We also 
 elevated the importance of the 
 [site speed report][analytics] that is available in Google Analytics on our
-metrics dashboard. 
+metrics dashboard. These tools allow us to regularly monitor the impact of 
+changes on our frontend performance to ensure that we maintain a zippy
+user response time as we make changes to the site. 
 
 
 [speedracer]: http://en.wikipedia.org/wiki/Speed_Racer
@@ -177,6 +189,7 @@ metrics dashboard.
 [dynatrace]: http://ajax.dynatrace.com/ajax/en/
 [chromedev]: http://code.google.com/chrome/devtools/docs/profiles.html
 [firebug]: http://getfirebug.com/
+[souders]: http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/
 [soundmanager]: http://www.schillmania.com/projects/soundmanager2/
 [ierendering]: http://blog.dynatrace.com/2009/12/12/understanding-internet-explorer-rendering-behaviour/
 [pagespeed]: http://code.google.com/speed/page-speed/
@@ -184,3 +197,4 @@ metrics dashboard.
 [webpagetest]: http://www.webpagetest.org/
 [console]: http://stackoverflow.com/questions/3516515/console-time-in-ie8-developer-tools
 [analytics]: http://analytics.blogspot.com/2011/12/greater-insights-from-site-speed-report.html
+[pagespeed]: http://code.google.com/speed/page-speed/docs/using_chrome.html
