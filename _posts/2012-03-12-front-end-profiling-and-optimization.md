@@ -198,3 +198,5 @@ user response time as we make changes to the site.
 [console]: http://stackoverflow.com/questions/3516515/console-time-in-ie8-developer-tools
 [analytics]: http://analytics.blogspot.com/2011/12/greater-insights-from-site-speed-report.html
 [pagespeed]: http://code.google.com/speed/page-speed/docs/using_chrome.html
+
+<!-- more end -->
