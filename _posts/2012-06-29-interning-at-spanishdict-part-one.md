@@ -14,6 +14,8 @@ My name is Hari, and I've been interning at SpanishDict for a few weeks now.
 This will be the first of a series of blog posts about experiences here at 
 SpanishDict.
 
+[![Working at my desk!][hari_img]]
+
 [hari_img]: {{ img_dir }}/user_hari_photo.jpg
 
 I love SpanishDict! Headquarters are in Arlington, VA, just minutes outside
