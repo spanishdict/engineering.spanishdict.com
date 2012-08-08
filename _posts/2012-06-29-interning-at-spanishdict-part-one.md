@@ -10,13 +10,11 @@ tags: ['interns', 'careers', 'spanishdict.com', 'washington, dc']
 
 {% capture img_dir %}{{ site.baseurl }}media/img/{{page.date|date: "%Y/%m/%d"}}{% endcapture %}
 
-My name is Hari, and I've been interning at SpanishDict for a few weeks now. 
-This will be the first of a series of blog posts about experiences here at 
+My name is Hari, and I've been interning at SpanishDict for a few weeks now.
+This will be the first of a series of blog posts about experiences here at
 SpanishDict.
 
-[![Working at my desk!][hari_img]]
-
-[hari_img]: {{ img_dir }}/user_hari_photo.jpg
+![Working at my desk!]({{ img_dir }}/user_hari_photo.jpg)
 
 I love SpanishDict! Headquarters are in Arlington, VA, just minutes outside
 the city limits. I've never lived in DC, so it's been quite an adventure, both
@@ -39,7 +37,7 @@ create the infrastructure of my web app. Backbone has allowed me to easily
 create and render the views and templates that I want, and its flexibility
 and events handling are really great, too. More recently, I have been working
 on generating the specific questions I can use for my quizzes, and how to go
-about deciding what kinds of questions I should display. 
+about deciding what kinds of questions I should display.
 
 Since I love interactive games and other such devices,
 making these features for the website is right up my alley. I'm excited

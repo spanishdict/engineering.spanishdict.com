@@ -49,6 +49,14 @@ If you change the default layout or anything in "404.md", run:
 and commit any changes.
 
 
+Working on Changes
+==================
+You should work in the "`master`" branch for all of your changes. You can
+view the live rendered pages in dev. at: http://127.0.0.1:4000 .  When you
+are finished, then you can push to the pages branch (next section).
+
+**Note**: Your changes should *first* go in **master**, not **gh-pages**.
+
 Pushing to Live Site
 ====================
 Pushing to the live site is easy, using GitHub [Pages][gh_pages]' magic
