@@ -23,6 +23,8 @@ Foggy Bottom/downtown area where I live, as well as the Arlington/Clarendon
 area where I work. There are lots of places to go and things to do, and I feel
 like my time here is already slipping away.
 
+<!-- more start -->
+
 Working in the office is awesome -- everybody knows each other and there are
 lots of fun events! Day to day, things never get boring -- just the other day,
 one of the guys in the office next door left us a whole box of donuts! I'm
@@ -47,3 +49,5 @@ than it is now (tough, right?).
 Hasta luego! (Until next time!)
 
 [spanishdict]: http://www.spanishdict.com
+
+<!-- more end -->

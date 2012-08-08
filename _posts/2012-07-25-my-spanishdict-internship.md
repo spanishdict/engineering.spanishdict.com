@@ -31,6 +31,8 @@ Ryan questions about his own work. Additionally, I have learned about our
 business model through our weekly team meetings and in everyday conversations
 with other members of the team.
 
+<!-- more start -->
+
 My primary project relates to both managing changes to the schema of our
 database in response to regular changes to the website (especially with the
 addition of our Node.js API) and maintaining the quality of our content. The
@@ -90,7 +92,9 @@ of knowledge and motivation. To end this post, I’ll throw some technology
 buzzwords to capture some of what I’ve seen and learned about (in varying
 degrees) at work:
 
-Django, Python, Boto, MySQL, PHP, MrJob, Node.js, Coffeescript, Loggly, Scout,
+Django, Python, Boto, MySQL, PHP, MrJob, Node.js, CoffeeScript, Loggly, Scout,
 NoSQL, MongoDB
 
 [spanishdict]: http://www.spanishdict.com
+
+<!-- more end -->
