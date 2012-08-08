@@ -16,9 +16,7 @@ year of undergrad at UNC, where I study Computer Science. The goal of this
 post is to reflect on my experience at SpanishDict, both for my own benefit
 and for communicating what it’s like to work at this great company.
 
-[![My workspace][zach_photo]]
-
-[zach_photo]: {{ img_dir }}/zach_mugshot.png
+![My workspace]({{ img_dir }}/zach_mugshot.png)
 
 I started here with two other interns (Hari Ganesan and Maria Bajzek) in late
 May. Moving from rural North Carolina to Washington, DC was an interesting
