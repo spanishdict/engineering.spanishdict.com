@@ -1,3 +1,7 @@
+
+# THIS IS DEPRECATED!
+### See https://github.com/spanishdict/eng-blog-content
+
 SpanishDict Engineering Blog
 ============================
 
